@@ -28,8 +28,8 @@ const Login = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-purple-500">
-            <div className="w-full max-w-sm p-8 space-y-6 bg-purple-100 rounded-lg shadow-lg">
+        <div className="flex items-center justify-center min-h-screen bg-white">
+            <div className="w-full max-w-sm p-8 space-y-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-semibold text-center text-blue -700">Login</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="space-y-4">
@@ -42,7 +42,7 @@ const Login = () => {
                                 type="email"
                                 placeholder="Enter your email"
                                 {...register('email')}
-                                className={`w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                                className={`w-full px-4 py-2 mt-2 rounded-md outline-none border-none ring-2 ring-gray-300  ${errors.email ? 'ring-red-500' : 'focus:ring-purple-500'}`}
                             />
                             {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>}
                         </div>
@@ -55,7 +55,7 @@ const Login = () => {
                                 type="password"
                                 placeholder="Enter your password"
                                 {...register('password')}
-                                className={`w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 ${errors.password ? 'border-red-500' : 'border-gray-300'}`}
+                                className={`w-full px-4 py-2 mt-2 rounded-md outline-none border-none ring-2 ring-gray-300 ${errors.password ? 'ring-red-500' : 'focus:ring-purple-500'}`}
                             />
                             {errors.password && <p className="mt-1 text-sm text-red-500">{errors.password.message}</p>}
                         </div>
@@ -63,7 +63,7 @@ const Login = () => {
 
                     <button
                         type="submit"
-                        className="w-full mt-6 py-2 text-white bg-purple-800 rounded-md hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full mt-6 py-2 text-white bg-purple-500 cursor-pointer uppercase rounded-md hover:bg-purple-600 duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     >
                         Log In
                     </button>
