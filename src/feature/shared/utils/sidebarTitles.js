@@ -8,6 +8,12 @@ export const sidebarTitles = [
     { name: 'dashboard', path: '/dashboard', icon: RiDashboardFill },
     { name: 'students', path: '/students', icon: PiStudentBold },
     { name: 'courses', path: '/courses', icon: IoBookmarks },
-    { name: 'batches', path: '/batches', icon: MdAccountTree },
+    {
+        name: 'batches', icon: MdAccountTree,
+        children: [
+            { path: '/current-batches', name: 'current-batches' },
+            { path: '/complete-batches', name: 'complete-batches' }
+        ],
+    },
     { name: 'mentors', path: '/mentors', icon: ImUserTie },
 ]

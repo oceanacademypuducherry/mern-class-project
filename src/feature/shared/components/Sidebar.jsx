@@ -12,7 +12,6 @@ function Sidebar({ sidebarStyle = 'w-full bg-white', outerDivStyle = 'h-full w-f
     const location = useLocation()
     const [pathName, setPathName] = useState('')
     const path = location.pathname
-    const navigate = useNavigate()
     const [isActive, setIsActive] = useState(false)
 
     useEffect(() => {
@@ -59,10 +58,7 @@ function Sidebar({ sidebarStyle = 'w-full bg-white', outerDivStyle = 'h-full w-f
                     <div className='flex flex-col gap-5 text-gray-500 pe-10'>
                         {sidebarTitles.map((item, index) => {
                             return (
-                                <SidebarButton key={index} pathName={pathName} item={item} onClick={() => {
-                                    mobileMode && closureHandler()
-                                    navigate(`/naveen-preview${item.path}`)
-                                }} />
+                                <SidebarButton onDismiss={closureHandler} mobileMode={mobileMode} key={index} pathName={pathName} item={item} />
                             )
                         })}
                     </div>
