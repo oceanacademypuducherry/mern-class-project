@@ -1,0 +1,44 @@
+const students = [
+  {
+    id: 1,
+    name: "Farhaanah F",
+    age: 20,
+    course: "Python",
+    email: "faru@gmail.com",
+    avatar: "https://static.vecteezy.com/system/resources/previews/050/083/199/non_2x/a-woman-avatar-in-a-round-circle-free-vector.jpg"
+  },
+  {
+    id: 2,
+    name: "Aswin K",
+    age: 22,
+    course: "Digital Marketing",
+    email: "aswin@gmail.com",
+    avatar: "https://th.bing.com/th/id/OIP.rAsHkatTm_T2OirqVk1TyQHaEc?rs=1&pid=ImgDetMain"
+  },
+  {
+    id: 3,
+    name: "Pavithra M",
+    age: 19,
+    course: "Java",
+    email: "pavithra@gmail.com",
+    avatar: "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
+  },
+  {
+     id: 4,
+    name: "Karthick R",
+    age: 25,
+    course: "Data science",
+    email: "karthick@gmail.com",
+    avatar: "https://images.vexels.com/media/users/3/145908/raw/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
+  },
+  {
+     id: 5,
+    name: "Priya M",
+    age: 22,
+    course: "Javascript",
+    email: "priya@gmail.com",
+    avatar: "https://static.vecteezy.com/system/resources/previews/004/773/704/original/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network-vector.jpg"
+  }
+];
+
+export default students;
